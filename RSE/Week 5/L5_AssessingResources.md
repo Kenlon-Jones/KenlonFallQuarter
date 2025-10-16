@@ -69,9 +69,9 @@ Section 5: Gather your External Resources that will help start this business
 
 External Resources
 
-1. [External Resource]
-2. 
-3. 
-4. 
+1. Aquantiances
+2. Friends
+3. Family Members
+4. Mentors
 5. 
 ----------------------------------------------------------------------
