@@ -1,46 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-5.3.8 dist/css/bootstrap.min.css')}}">
-    <title>Document</title>
-</head>
-<body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Business Name</a>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-Link" href="/">Home</a>
-                        </i>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sign Up</a>
-                        </i>
-                    </ul>
-                </div>
-            </div>
-        </nav>    
+{% extends 'base.html' %}
+{% block title %}Richmond Rides Bike Repair{% endblock %}
 
-    <h1>Welcome {{name}} To my Flask App!</h1>
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Business Name</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </i>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+{% endblock %}
+
+   
+{% block content %}
+
+    <h1>Welcome Kenlon Jones To my Flask App!</h1>
     <p>This page was loaded from a html template!</p>
 
     <div class="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="Profile">
+        <img src="static/Images/Headshot.jpg" class="card-img-top" alt="Profile">
         <div class="card-body">
             <h5 class="card-title">Kenlon Jones</h5>
             <p class="card-text">Entrepreneur</p>
             <a href="#" class="btn btn-primary">View Profile</a>
         </div>
     </div>
-    
-<script src="{{url_for('static', filename='bootstrap-5.3.8 dist/css/bootstrap.min.css')}}"></script>
-</body>
-</html>
+{% endblock %}    
+
+{% block footer %}
+{% endblock %}
