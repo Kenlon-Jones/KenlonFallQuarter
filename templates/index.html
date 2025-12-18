@@ -4,20 +4,20 @@
 {% block navbar %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Business Name</a>
+            <a style="padding-left: 100px;" class="navbar-brand" href="#">Richmond Rides Bike Repair</a>
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto">
+                <ul style="padding-left: 870px;" class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#">Bikes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Repair</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </i>
                 </ul>
             </div>
@@ -28,18 +28,31 @@
    
 {% block content %}
 
-    <h1>Welcome Kenlon Jones To my Flask App!</h1>
-    <p>This page was loaded from a html template!</p>
-
-    <div class="card" style="width: 18rem;">
-        <img src="static/Images/Headshot.jpg" class="card-img-top" alt="Profile">
-        <div class="card-body">
-            <h5 class="card-title">Kenlon Jones</h5>
-            <p class="card-text">Entrepreneur</p>
-            <a href="#" class="btn btn-primary">View Profile</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <img src="static/Images/Bike-repair.jpg" class="card-img-top" alt="Profile">
+            </div>
+            <div class="col-4">
+                <h1>About Us</h1>
+                <p>We offer to fix a variety of different bikes ranging from BMX, mountain, road, hybrid, and even tandem.</p>
+                <p>This business is located and based in Richmond, California, so if you need somewhere to get a quick fix, you know where to go.</p>
+                <p>Our services are at  high quality but don't worry, it isn't very expensive unlike other places.</p>
+            </div>
         </div>
     </div>
+
+<body class="d-flex flex-column min-vh-100">
+  <div class="mx-auto p-2" style="width: 200px;">
+  <h6>Richmond Rides Bike Repair</h6>
+    <h6>1249 Greenway Drive</h6>
+    <h6>(510) 753-4738</h6>
+    <h6>HELP@RRBR.com</h6>
+</div>
+</body>
+
 {% endblock %}    
 
 {% block footer %}
 {% endblock %}
+
